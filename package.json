@@ -1,0 +1,28 @@
+{
+  "name": "elevator-vanillats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "wpw": "webpack --watch", 
+    "serve": "http-server build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meshulamzusha/Elevator-vanillats.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meshulamzusha/Elevator-vanillats/issues"
+  },
+  "homepage": "https://github.com/meshulamzusha/Elevator-vanillats#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^12.0.2",
+    "http-server": "^14.1.1",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

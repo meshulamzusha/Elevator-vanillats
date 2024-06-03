@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "rootDir": "src/ts",
+      "outDir": "dist",
+      "target": "es5",
+      "lib": [
+        "es2019",
+        "dom"
+      ],
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "strict": true,
+      "sourceMap": true
+    }
+  }
