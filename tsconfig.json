@@ -2,7 +2,7 @@
     "compilerOptions": {
       "rootDir": "src/ts",
       "outDir": "dist",
-      "target": "es5",
+      "target": "es2019",
       "lib": [
         "es2019",
         "dom"
