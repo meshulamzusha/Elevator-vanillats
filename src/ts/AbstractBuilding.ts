@@ -1,6 +1,6 @@
 import Elevator from "./Elevator";
 import Floor from "./Floor";
-import ElevatorManager from "./MinWaitingTimeElevatorManager";
+import IElevatorManager from "./ElevatorManagerInterface";
 
 /**
  * Abstract base class representing a building with elevators and floors.
@@ -9,7 +9,7 @@ import ElevatorManager from "./MinWaitingTimeElevatorManager";
 export default abstract class AbstractBuilding {
     protected elevators: Elevator[] = [];
     protected floors: Floor[] = [];
-    protected manager: ElevatorManager; // The elevator manager responsible for handling calls and managing elevators
+    protected manager: IElevatorManager; // The elevator manager responsible for handling calls and managing elevators
 
     /**
      * Creates a new building instance with specified number of floors and elevators.
@@ -28,7 +28,7 @@ export default abstract class AbstractBuilding {
      * Must be implemented by concrete building classes.
      * @returns An instance of ElevatorManager
      */
-    protected abstract createManager(): ElevatorManager;
+    protected abstract createManager(): IElevatorManager;
 
     /**
      * Sets up the elevator system by adding event listeners to floor buttons.
